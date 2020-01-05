@@ -1,0 +1,31 @@
+package getRequest;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.*;
+import io.restassured.response.Response;
+
+public class GetWeatherTestModif {
+
+	@Test
+	public void testResponseCode() {
+		
+		int code=get("https://samples.openweathermap.org/data/2.5/weather?zip=94040,us&appid=b6907d289e10d714a6e88b30761fae22").getStatusCode();
+	
+		System.out.println("Status code is "+code);
+		
+		Assert.assertEquals(code, 200);
+	}	
+	
+	@Test
+	public void testBody() {
+		
+		Response resp=get("https://samples.openweathermap.org/data/2.5/weather?zip=94040,us&appid=b6907d289e10d714a6e88b30761fae22");
+	
+		String data=resp.asString();
+		
+		System.out.println("Data is "+data);		
+		
+		System.out.println("Response time is "+resp.getTime());
+	}	
+}
