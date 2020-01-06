@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="258056" started-at="2020-01-05T14:15:31 CST" finished-at="2020-01-05T14:19:49 CST">
+  <suite name="Default suite" duration-ms="3529" started-at="2020-01-05T18:52:53 CST" finished-at="2020-01-05T18:52:57 CST">
     <groups>
+      <group name="positive">
+        <method signature="CRUD_Test.createTest()[pri:1, instance:restAPI.CRUD_Test@13a5fe33]" name="createTest" class="restAPI.CRUD_Test"/>
+        <method signature="CRUD_Test.deleteTest()[pri:4, instance:restAPI.CRUD_Test@13a5fe33]" name="deleteTest" class="restAPI.CRUD_Test"/>
+        <method signature="CRUD_Test.readTest()[pri:2, instance:restAPI.CRUD_Test@13a5fe33]" name="readTest" class="restAPI.CRUD_Test"/>
+        <method signature="CRUD_Test.updateTest()[pri:3, instance:restAPI.CRUD_Test@13a5fe33]" name="updateTest" class="restAPI.CRUD_Test"/>
+      </group> <!-- positive -->
     </groups>
-    <test name="Default test" duration-ms="258056" started-at="2020-01-05T14:15:31 CST" finished-at="2020-01-05T14:19:49 CST">
-      <class name="getRequest.GetWeatherTestModif">
-        <test-method status="PASS" signature="testBody()[pri:0, instance:getRequest.GetWeatherTestModif@43c1b556]" name="testBody" duration-ms="4963" started-at="2020-01-05T14:15:31 CST" finished-at="2020-01-05T14:15:36 CST">
+    <test name="Default test" duration-ms="3529" started-at="2020-01-05T18:52:53 CST" finished-at="2020-01-05T18:52:57 CST">
+      <class name="restAPI.CRUD_Test">
+        <test-method status="PASS" signature="createTest()[pri:1, instance:restAPI.CRUD_Test@13a5fe33]" name="createTest" duration-ms="3084" started-at="2020-01-05T18:52:53 CST" description="PostMethodPositiveTest" finished-at="2020-01-05T18:52:56 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBody -->
-        <test-method status="PASS" signature="testResponseCode()[pri:0, instance:getRequest.GetWeatherTestModif@43c1b556]" name="testResponseCode" duration-ms="252983" started-at="2020-01-05T14:15:36 CST" finished-at="2020-01-05T14:19:49 CST">
+        </test-method> <!-- createTest -->
+        <test-method status="PASS" signature="readTest()[pri:2, instance:restAPI.CRUD_Test@13a5fe33]" name="readTest" duration-ms="277" started-at="2020-01-05T18:52:56 CST" description="GetMethodPositiveTest" finished-at="2020-01-05T18:52:57 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testResponseCode -->
-      </class> <!-- getRequest.GetWeatherTestModif -->
+        </test-method> <!-- readTest -->
+        <test-method status="PASS" signature="updateTest()[pri:3, instance:restAPI.CRUD_Test@13a5fe33]" name="updateTest" duration-ms="50" started-at="2020-01-05T18:52:57 CST" description="PutMethodPositiveTest" finished-at="2020-01-05T18:52:57 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateTest -->
+        <test-method status="PASS" signature="deleteTest()[pri:4, instance:restAPI.CRUD_Test@13a5fe33]" name="deleteTest" duration-ms="38" started-at="2020-01-05T18:52:57 CST" description="DeleteMethodPositiveTest" finished-at="2020-01-05T18:52:57 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTest -->
+      </class> <!-- restAPI.CRUD_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

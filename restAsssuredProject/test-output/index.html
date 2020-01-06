@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\stas1\AppData\Local\Temp\testng-eclipse-1140212107\testng-customsuite.xml</span>
+                    <span>C:\Users\stas1\AppData\Local\Temp\testng-eclipse-436550779\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Default_suite">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="getRequest.GetWeatherTestModif" hash-for-method="testBody">testBody</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="restAPI.CRUD_Test" hash-for-method="createTest">createTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="getRequest.GetWeatherTestModif" hash-for-method="testResponseCode">testResponseCode</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="restAPI.CRUD_Test" hash-for-method="deleteTest">deleteTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="restAPI.CRUD_Test" hash-for-method="readTest">readTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="restAPI.CRUD_Test" hash-for-method="updateTest">updateTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -125,21 +135,43 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">getRequest.GetWeatherTestModif</span>
+              <span class="class-name">restAPI.CRUD_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testBody">
-                  </a> <!-- testBody -->
-                  <span class="method-name">testBody</span>
+                  <a name="createTest">
+                  </a> <!-- createTest -->
+                  <span class="method-name">createTest</span>
+                  <em>
+(PostMethodPositiveTest)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testResponseCode">
-                  </a> <!-- testResponseCode -->
-                  <span class="method-name">testResponseCode</span>
+                  <a name="deleteTest">
+                  </a> <!-- deleteTest -->
+                  <span class="method-name">deleteTest</span>
+                  <em>
+(DeleteMethodPositiveTest)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="readTest">
+                  </a> <!-- readTest -->
+                  <span class="method-name">readTest</span>
+                  <em>
+(GetMethodPositiveTest)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateTest">
+                  </a> <!-- updateTest -->
+                  <span class="method-name">updateTest</span>
+                  <em>
+(PutMethodPositiveTest)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,7 +179,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\stas1\AppData\Local\Temp\testng-eclipse-1140212107\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\stas1\AppData\Local\Temp\testng-eclipse-436550779\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -156,7 +188,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;getRequest.GetWeatherTestModif&quot;/&gt;
+      &lt;class name=&quot;restAPI.CRUD_Test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -180,6 +212,26 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">positive</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">createTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">readTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -196,20 +248,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testResponseCode')
-data.setCell(0, 2, 'getRequest.GetWeatherTestModif')
-data.setCell(0, 3, 252983);
+data.setCell(0, 1, 'createTest')
+data.setCell(0, 2, 'restAPI.CRUD_Test')
+data.setCell(0, 3, 3084);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testBody')
-data.setCell(1, 2, 'getRequest.GetWeatherTestModif')
-data.setCell(1, 3, 4963);
+data.setCell(1, 1, 'readTest')
+data.setCell(1, 2, 'restAPI.CRUD_Test')
+data.setCell(1, 3, 277);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'updateTest')
+data.setCell(2, 2, 'restAPI.CRUD_Test')
+data.setCell(2, 3, 50);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'deleteTest')
+data.setCell(3, 2, 'restAPI.CRUD_Test')
+data.setCell(3, 3, 38);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -235,14 +295,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">getRequest.GetWeatherTestModif</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">restAPI.CRUD_Test</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testBody</span>
+                <span class="method-name">createTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testResponseCode</span>
-                <span class="method-start">4964 ms</span>
+                <span class="method-name">readTest</span>
+                <span class="method-start">3101 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateTest</span>
+                <span class="method-start">3381 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteTest</span>
+                <span class="method-start">3436 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
